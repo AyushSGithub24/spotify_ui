@@ -12,6 +12,7 @@ nav {
     align-items: center;
     color: aliceblue;
     height: 100px;
+    flex-wrap: wrap;
 }
 
 .spotify_logo_name {
@@ -29,28 +30,28 @@ nav>.left {
 }
 
 .search-bar {
-    background-color: rgb(35, 143, 143);
+    background-color: rgb(40, 40, 40);
     padding: 2px;
+    border-radius: 6px;
 }
 .search-ico,
 .microphone-ico {
-    font-size: x-large;
+    font-size: large;
     padding: 5px;
     cursor: pointer;
 }
 
 .search-bar>input {
-    background-color: rgb(35, 143, 143);
+    background-color: rgb(40, 40, 40);
     border: none;
-    font-weight: bolder;
-    font-size: x-large;
+    font-size: large;
     color: white;
     height: 45px;
 }
 
 .search-bar>input::placeholder {
     color: white;
-    font-size: x-large;
+    font-size: large;
 }
 
 nav>.right {
@@ -87,6 +88,7 @@ main>.content_left {
 }
 .content_left >article img:hover{
     transform: translateY(-5px);
+    width: 33%;
 }
 
 .content_left > article {
@@ -120,6 +122,36 @@ main>.content_left {
     height: 150px;
 }
 
+.parent{
+    background-color: black;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.child{
+     
+    /* background-color: saddlebrown; */
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.imges{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgenglis{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 main>.content_right {
