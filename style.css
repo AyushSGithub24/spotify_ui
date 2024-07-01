@@ -15,14 +15,14 @@ nav {
     color: aliceblue;
     height: 100px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .spotify_logo_name {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 nav>.left {
@@ -100,6 +100,7 @@ main>.content_left {
     display: flex;
     padding: 5px;
     justify-content: space-evenly;
+    margin-top: 6PX;
 }
 
 .latest-release{
@@ -123,11 +124,22 @@ main>.content_left {
     display: flex;
     align-items: center;
 }
+
 [cover-img]{
     width: 150px;
     height: 150px;
+    transition: background-image 0.5s ease-in-out; 
 }
-
+[cover-img]:hover{
+    opacity: 30%;
+}
+.play{
+    background-image: url(./resourses/play-button-arrowhead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height:150px;
+}
 .parent{
     background-color: black;
     white-space: nowrap;
@@ -144,10 +156,11 @@ main>.content_left {
     font-weight: 100;
     font-style: normal;
     cursor: pointer;
+   
 }
 .imges{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
